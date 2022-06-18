@@ -127,6 +127,6 @@ class Vow {
   }
 }
 
-if (window) { window.Vow = Vow; }
+if (typeof window !== 'undefined') { window.Vow = Vow; }
 
 export default Vow;
