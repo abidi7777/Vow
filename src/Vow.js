@@ -127,4 +127,6 @@ class Vow {
   }
 }
 
+if (window) { window.Vow = Vow; }
+
 export default Vow;
