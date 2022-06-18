@@ -8,7 +8,7 @@ describe('Vow', () => {
     await expect(async () => new Vow()).rejects.toThrow('executor is not a function');
   });
 
-  it('should create vow with <pending state>', () => {
+  it('should create a vow with <pending state>', () => {
     expect(new Vow(noop).state).toEqual(STATES.PENDING);
   });
 
